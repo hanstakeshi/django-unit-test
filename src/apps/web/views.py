@@ -12,3 +12,8 @@ def autor_detalle(request, id=None):
     autor = Autor.objects.get(id=int(2))
     print(autor.get_absolute_url())
     return render(request, 'web/home.html', locals())
+
+
+def autores(request):
+
+    return render(request, "web/autores.html", locals())
